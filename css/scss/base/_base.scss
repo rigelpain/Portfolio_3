@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "M PLUS Rounded 1c", "Varela Round";
+}
+
+body {
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding-inline-start: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,88 @@
+.header {
+  &-wrap {
+    @include pc {
+      background-color: $color-5;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &-logo {
+    @include pc {
+      margin: 30px auto;
+      width: 150px;
+      height: 50px;
+      background: url("../image/tittle-logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &-inner {
+    @include pc {
+      width: 200px;
+      height: 100%;
+      margin-right: 55px;
+    }
+
+    &__list {
+      &-wrap {
+        @include pc {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+      }
+      &-item {
+        @include pc {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          align-items: flex-end;
+        }
+        &-large {
+          @include pc {
+            display: inline-block;
+            margin: 0;
+            font-size: 1.8rem;
+            text-align: right;
+            color: $color-2;
+          }
+        }
+        &-small {
+          @include pc {
+            display: inline-block;
+            margin: 0;
+            font-size: 1.2rem;
+            text-align: right;
+            color: $color-3;
+          }
+        }
+        &-profile {
+          @include pc {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: all 1000ms 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            background-image: url(../image/meow.jpg);
+            background-size: cover;
+            background-position: center;
+            &:hover {
+              transform: scale(1) rotate(360deg);
+            }
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
