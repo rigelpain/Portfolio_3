@@ -118,6 +118,30 @@
           background-position: right;
           background-size: cover;
         }
+        &-2 {
+          background: url("../image/hacku2019sendai_3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        &-3 {
+          background: url("../image/hacku2018tokyo_1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        &-4 {
+          background: url("../image/hacku2018hakodate_1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        &-5 {
+          background: url("../image/hacku2017tokyo_1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
       }
       &-wrap {
         @include pc {
