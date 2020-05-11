@@ -44,7 +44,7 @@
   &__right {
     width: auto;
     height: 100%;
-    padding-right: 30px;
+    padding-right: 60px;
   }
   &__thumbnail {
     width: 100%;
@@ -99,7 +99,6 @@
         font-weight: bold;
         line-height: 4rem;
         color: $color-2;
-        word-break: keep-all;
       }
       &-sub {
         margin: 0;
@@ -107,17 +106,15 @@
         font-weight: bold;
         line-height: 4rem;
         color: $color-3;
-        word-break: keep-all;
       }
     }
-    &-discription {
+    &-description {
       &-content {
         margin-top: 30px;
         font-size: 1.8rem;
         font-weight: bold;
         line-height: 2.8rem;
         color: $color-2;
-        word-break: keep-all;
       }
     }
   }
@@ -125,17 +122,15 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: $color-3;
-    word-break: keep-all;
   }
   &__tittle {
     margin: 20px 0;
     font-size: 4rem;
     font-weight: bold;
     color: $color-2;
-    word-break: keep-all;
   }
   &__content {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: $color-2;
   }
 }
