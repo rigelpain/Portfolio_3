@@ -82,6 +82,46 @@
             margin-bottom: 10px;
           }
         }
+        &__sns {
+          width: 100%;
+          height: 20px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row-reverse;
+          &-twitter {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            margin-right: 2px;
+            &::before {
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin-left: -50px;
+              content: "\f099";
+              color: $color-3;
+              font-size: 20px;
+              font-family: fontAwesome;
+            }
+          }
+          &-github {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            margin-right: 10px;
+            &::before {
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin-left: -50px;
+              content: "\f113";
+              color: $color-3;
+              font-size: 20px;
+              font-family: fontAwesome;
+            }
+          }
+        }
       }
     }
   }

@@ -2,6 +2,7 @@
   @include pc {
     width: 100%;
     height: 100%;
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-around;
   }
@@ -49,40 +50,159 @@
   &__thumbnail {
     width: 100%;
     height: 250px;
-
     &-list {
       width: 100%;
       height: 100%;
     }
-    &-1 {
+    .-thum {
+      &-1 {
+        &-1 {
+          background: url("../image/hacku2017tokyo_1.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-2 {
+          background: url("../image/hacku2017tokyo_2.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-3 {
+          background: url("../image/hacku2017tokyo_3.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-4 {
+          background: url("../image/hacku2017tokyo_4.png");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &-2 {
+        &-1 {
+          background: url("../image/hacku2018hakodate_1.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-2 {
+          background: url("../image/hacku2018hakodate_2.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-3 {
+          background: url("../image/hacku2018hakodate_3.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-4 {
+          background: url("../image/hacku2018hakodate_4.png");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &-3 {
+        &-1 {
+          background: url("../image/hacku2018tokyo_1.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-2 {
+          background: url("../image/hacku2018tokyo_2.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-3 {
+          background: url("../image/hacku2018tokyo_3.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-4 {
+          background: url("../image/hacku2018tokyo_4.png");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &-4 {
+        &-1 {
+          background: url("../image/hacku2019sendai_1.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-2 {
+          background: url("../image/hacku2019sendai_2.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-3 {
+          background: url("../image/hacku2019sendai_3.png");
+          background-position: center;
+          background-size: cover;
+        }
+        &-4 {
+          background: url("../image/hacku2019sendai_4.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-5 {
+          background: url("../image/hacku2019sendai_5.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-6 {
+          background: url("../image/hacku2019sendai_6.jpg");
+          background-position: 50% 30%;
+          background-size: cover;
+        }
+        &-7 {
+          background: url("../image/hacku2019sendai_7.png");
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      &-5 {
+        &-1 {
+          background: url("../image/ggjhakodate_1.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-2 {
+          background: url("../image/ggjhakodate_2.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: #000000;
+        }
+        &-3 {
+          background: url("../image/ggjhakodate_3.gif");
+          background-position: center;
+          background-size: cover;
+        }
+        &-4 {
+          background: url("../image/ggjhakodate_4.gif");
+          background-position: center;
+          background-size: cover;
+        }
+        &-5 {
+          background: url("../image/ggjhakodate_5.jpg");
+          background-position: center;
+          background-size: cover;
+        }
+        &-6 {
+          background: url("../image/ggjhakodate_6.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-color: #000000;
+        }
+      }
+    }
+
+    &-products {
       width: 300px;
       height: 200px;
-      background: url("../image/ggjhakodate_1.jpg");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
       background-color: #000000;
       border: solid $color-3 5px;
       border-radius: 20px;
-    }
-    &-2 {
-      width: 300px;
-      height: 200px;
-      background: url("../image/ggjhakodate_2.gif");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-color: #000000;
-      border: solid $color-3 5px;
-      border-radius: 20px;
-    }
-    &-3 {
-      width: 100%;
-      height: 100%;
-      background: url("../image/ggjhakodate_3.jpg");
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: cover;
     }
   }
   &__property {
@@ -115,6 +235,16 @@
         font-weight: bold;
         line-height: 2.8rem;
         color: $color-2;
+        &-myjob {
+          color: $color-1;
+        }
+        &-notmyjob {
+          color: $color-4;
+        }
+        &-link {
+          text-decoration: none;
+          outline: none;
+        }
       }
     }
   }

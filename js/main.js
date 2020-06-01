@@ -6,6 +6,9 @@ $(function () {
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
+    lazyLoad: "progressive",
+    swipe: true,
+    draggable: true,
     responsive: [
       {
         breakpoint: 1140,
@@ -36,5 +39,10 @@ $(function () {
     arrows: false,
     fade: true,
     swipe: true,
+    lazyLoad: "progressive",
+    touchMove: true,
+    focusOnSelect: true,
+    swipe: true,
+    draggable: true,
   });
 });
