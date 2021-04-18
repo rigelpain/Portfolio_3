@@ -46,6 +46,10 @@
     width: auto;
     height: 100%;
     padding-right: 60px;
+    div {
+      font-size: 1.6rem;
+      color: $color-2;
+    }
   }
   &__thumbnail {
     width: 100%;

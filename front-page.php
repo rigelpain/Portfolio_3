@@ -1,114 +1,73 @@
-<!DOCTYPE html>
-<html>
 <?php get_header();?>
-  <body>
-    <header class="header-wrap">
-      
-        <a href="http://rigelpain.s1008.xrea.com/x/portfolio/3" class="header-logo">
-        </a>
-      <div class="header-inner">
-        <ol class="header-inner__list-wrap">
-          <li class="header-inner__list">
-            <div class="header-inner__list-item">
-              <p class="header-inner__list-item-large">PRODUCTS</p>
-              <p class="header-inner__list-item-small">過去の製作物</p>
-            </div>
-            <div class="header-inner__list-item">
-              <p class="header-inner__list-item-large">EVENTS</p>
-              <p class="header-inner__list-item-small">参加したイベント</p>
-            </div>
-            <div class="header-inner__list-item">
-              <p class="header-inner__list-item-large">Blog</p>
-              <p class="header-inner__list-item-small">ブログ</p>
-            </div>
-            <div class="header-inner__list-item">
-              <p class="header-inner__list-item-large">CONTACT</p>
-              <div class="header-inner__list-item-sns">
-                <div class="header-inner__list-item-twitter"></div>
-                <div class="header-inner__list-item-github"></div>
-              </div>
-            </div>
-            <div class="header-inner__list-item">
-              <span class="header-inner__list-item-large">THEMES</span>
-              <div class="header-inner__list-item-themes">
-                <div class="header-inner__list-item-vanilla"></div>
-                <div class="header-inner__list-item-banana"></div>
-                <div class="header-inner__list-item-sky"></div>
-              </div>
-            </div>
-          </li>
-          <li class="header-inner__list">
-            <div class="header-inner__list-item">
-              <div class="header-inner__list-item-profile"></div>
-              <p class="header-inner__list-item-large">小林 陽昭</p>
-              <p class="header-inner__list-item-small">Kobayashi</br>Haruaki</p>
-            </div>
-          </li>
-          <li class="header-inner__list">
-            <div class="header-inner__list-item">
-              <p class="header-inner__list-item-small">はこだて未来大学</br>情報デザインコース(F) 2年</p>
-              <p class="header-inner__list-item-small">函館高専 情報コース 卒</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </header>
-    <?php get_header(); ?>
     
     <div class="main">
-      
+      <a href="./products"  class="header-inner__list-item">
       <div class="main-contents-tittle">
         <p class="main-contents-tittle-en">PRODUCTS</p>
         <p class="main-contents-tittle-ja">過去の作品</p>
       </div>
+    </a>
       <ul class="main-contents-list-wrap">
         <li class="main-contents-list">
           <div class="main-contents-item products-1">
-            <a href="./products/index.html">
+            <a href="./products/atamakaji/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
                   <p class="main-contents-item__description-tittle">頭鍛冶</p>
                   <p class="main-contents-item__description-tittle-type">- Unity / ESP32 / illust -</p>
-                  <p class="main-contents-item__description-tittle-sub">ヘドバンで鍛冶をする 変わったゲーム</p>
+                  <p class="main-contents-item__description-tittle-sub">両手を失った職人による</br>魂の鍛冶</p>
                 </div>
               </div>
             </a>
           </div>
         </li>
         <li class="main-contents-list">
-          <div class="main-contents-item products-1">
-            <a href="./products/index.html">
+          <div class="main-contents-item products-2">
+            <a href="./products/cheers/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
-                  <p class="main-contents-item__description-tittle">頭鍛冶</p>
-                  <p class="main-contents-item__description-tittle-type">- Unity / ESP32 / illust -</p>
-                  <p class="main-contents-item__description-tittle-sub">ヘドバンで鍛冶をする 変わったゲーム</p>
+                  <p class="main-contents-item__description-tittle">Cheers</p>
+                  <p class="main-contents-item__description-tittle-type">- React / ESP32 / Firebase -</p>
+                  <p class="main-contents-item__description-tittle-sub">\\ 会場投票賞獲得 //<br>乾杯をもっと楽しく！<br>パーティー会場を彩るデバイス</p>
                 </div>
               </div>
             </a>
           </div>
         </li>
         <li class="main-contents-list">
-          <div class="main-contents-item products-1">
-            <a href="./products/index.html">
+          <div class="main-contents-item products-3">
+            <a href="./products/bravers/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
-                  <p class="main-contents-item__description-tittle">頭鍛冶</p>
-                  <p class="main-contents-item__description-tittle-type">- Unity / ESP32 / illust -</p>
-                  <p class="main-contents-item__description-tittle-sub">ヘドバンで鍛冶をする 変わったゲーム</p>
+                  <p class="main-contents-item__description-tittle">BRAVERS</p>
+                  <p class="main-contents-item__description-tittle-type">- twitter / ESP32 -</p>
+                  <p class="main-contents-item__description-tittle-sub">フォロワーを賭けろ(ガチ)</br>現実に侵食してくる恐怖に打ち勝て</p>
                 </div>
               </div>
             </a>
           </div>
         </li>
         <li class="main-contents-list">
-          <div class="main-contents-item products-1">
-            <a href="./products/index.html">
+          <div class="main-contents-item products-4">
+            <a href="./products/enoki/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
-                  <p class="main-contents-item__description-tittle">頭鍛冶</p>
-                  <p class="main-contents-item__description-tittle-type">- Unity / ESP32 / illust -</p>
-                  <p class="main-contents-item__description-tittle-sub">ヘドバンで鍛冶をする 変わったゲーム</p>
+                  <p class="main-contents-item__description-tittle">Enok!<br>デコレータ</p>
+                  <p class="main-contents-item__description-tittle-type">- python / word2vec -</p>
+                  <p class="main-contents-item__description-tittle-sub">\\ 優秀賞獲得 //<br>SimejiのようなEnok!</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="main-contents-list">
+          <div class="main-contents-item products-5">
+            <a href="./products/bokudodo/index.html">
+              <div class="main-contents-item__description-wrap">
+                <div class="main-contents-item__description">
+                  <p class="main-contents-item__description-tittle">ぼくドド</p>
+                  <p class="main-contents-item__description-tittle-type">- Android / GPS -</p>
+                  <p class="main-contents-item__description-tittle-sub">\\ 初めての開発 //</br>函館山は俺らに任せろ</br>ハンズフリーナビアプリ</p>
                 </div>
               </div>
             </a>
@@ -125,7 +84,7 @@
           <div class="main-contents-item events-1">
             <div class="main-contents-item__description-wrap">
               <div class="main-contents-item__description">
-                <p class="main-contents-item__description-tittle">HackU 2019 仙台</p>
+                <p class="main-contents-item__description-tittle">HackU<br>2019<br>SENDAI</p>
                 <p class="main-contents-item__description-tittle-type">- ハッカソン -</p>
                 <p class="main-contents-item__description-tittle-sub">『 Cheers 』</br>乾杯をもっと楽しくするアプリ&デバイス</p>
               </div>
@@ -135,7 +94,7 @@
             <div class="main-contents-item events-1">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
-                  <p class="main-contents-item__description-tittle">HackU 2019 仙台</p>
+                  <p class="main-contents-item__description-tittle">HackU<br>2019<br>SENDAI</p>
                   <p class="main-contents-item__description-tittle-type">- ハッカソン -</p>
                   <p class="main-contents-item__description-tittle-sub">『 Cheers 』</br>乾杯をもっと楽しくするアプリ&デバイス</p>
                 </div>
@@ -146,7 +105,7 @@
             <div class="main-contents-item events-1">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
-                  <p class="main-contents-item__description-tittle">HackU 2019 仙台</p>
+                  <p class="main-contents-item__description-tittle">HackU<br>2019<br>SENDAI</p>
                   <p class="main-contents-item__description-tittle-type">- ハッカソン -</p>
                   <p class="main-contents-item__description-tittle-sub">『 Cheers 』</br>乾杯をもっと楽しくするアプリ&デバイス</p>
                 </div>
@@ -157,13 +116,31 @@
             <div class="main-contents-item events-1">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
-                  <p class="main-contents-item__description-tittle">HackU 2019 仙台</p>
+                  <p class="main-contents-item__description-tittle">HackU<br>2019<br>SENDAI</p>
                   <p class="main-contents-item__description-tittle-type">- ハッカソン -</p>
                   <p class="main-contents-item__description-tittle-sub">『 Cheers 』</br>乾杯をもっと楽しくするアプリ&デバイス</p>
                 </div>
               </div>
             </div>
           </li>
+      </ul>
+
+      <div class="main-contents-tittle">
+        <p class="main-contents-tittle-en">JOB</p>
+        <p class="main-contents-tittle-ja">実務経験</p>
+      </div>
+      <ul class="main-contents-list-wrap">
+        <li class="main-contents-list">
+          <div class="main-contents-item events-1">
+            <div class="main-contents-job-wrap">
+              <div class="main-contents-item__description">
+                <p class="main-contents-item__description-tittle">HackU<br>2019<br>SENDAI</p>
+                <p class="main-contents-item__description-tittle-type">- ハッカソン -</p>
+                <p class="main-contents-item__description-tittle-sub">『 Cheers 』</br>乾杯をもっと楽しくするアプリ&デバイス</p>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
       
       <div class="main-contents-tittle">
