@@ -1,0 +1,44 @@
+# ignore everything in the root except the "wp-content" directory.
+wp-admin
+wp-includes
+/wp-*.php
+!wp-content/
+/.htaccess
+/.htpasswd
+/index.php
+xmlrpc.php
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+!**/wp-content/themes/**
+!**/wp-content/themes/*/index.php
+
+# ignore these plugins
+
+
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# others
+.DS_Store
+node_modules
+Thumbs.db
+desktop.ini
+*.icloud
+
+# Wordpress files/directories
+.languages/*
+.plugins/*
+!.languages/.gitkeep
+!.plugins/.gitkeep
+
+db
+node_modules
+php
