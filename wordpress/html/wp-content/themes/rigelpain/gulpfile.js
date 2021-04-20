@@ -9,8 +9,8 @@ const glob = require("gulp-sass-glob"); // import記述の省略
 // const browserSync = require("browser-sync").create();
 
 const paths = {
-  styles: "./sass/**/*.scss",
-  _styles: "!./sass/**/_*.scss",
+  styles: "./scss/**/*.scss",
+  _styles: "!./scss/**/_*.scss",
 };
 
 // Styles

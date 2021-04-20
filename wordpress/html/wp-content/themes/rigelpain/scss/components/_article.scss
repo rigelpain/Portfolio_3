@@ -61,7 +61,7 @@
     .-thum {
       &-1 {
         &-1 {
-          background: url("../image/hacku2017tokyo_1.jpg");
+          // background: url("../image/hacku2017tokyo_1.jpg");
           background-position: center;
           background-size: cover;
         }
@@ -207,6 +207,8 @@
       background-color: #000000;
       border: solid $color-3 5px;
       border-radius: 20px;
+      background-size: contain;
+      background-position: center;
     }
   }
   &__property {
@@ -264,7 +266,12 @@
     color: $color-2;
   }
   &__content {
+    margin-top: 40px;
     font-size: 1.6rem;
     color: $color-2;
+    p {
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
   }
 }

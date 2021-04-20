@@ -2,31 +2,32 @@
 
     <div class="main">
       <a href="./products"  class="header-inner__list-item">
-        <div class="main-contents-tittle">
-          <p class="main-contents-tittle-en">PRODUCTS</p>
-          <p class="main-contents-tittle-ja">過去の作品</p>
-        </div>
-      </a>
+      <div class="main-contents-tittle">
+        <p class="main-contents-tittle-en">PRODUCTS</p>
+        <p class="main-contents-tittle-ja">過去の作品</p>
+      </div>
+    </a>
       <ul class="main-contents-list-wrap">
-        <?php
-        $query_blog = new WP_Query(
-          array(
-            'post_type' => 'products',
-            'posts_per_page' => 8,
-          )
-        );
-
-        if ($query_blog->have_posts()) {
-          while ($query_blog->have_posts()) { ?>
-            <?php $query_blog->the_post(); ?>
-
-
-          <?php
-          }
-        }
-        ?>
         <li class="main-contents-list">
-          <div class="main-contents-item products-1">
+        <div class="main-contents-item">
+        <?php
+          $query_products = new WP_Query(
+            array(
+              'post_type' => 'products',
+              'posts_per_page' => 8,
+            )
+          );
+
+          if ($query_products->have_posts()) {
+            while ($query_products->have_posts()) { ?>
+              <?php $query_products->the_post(); ?>
+              <a href="<?php echo get_permalink() ?>" class="blogCard" style="background-image: url(<?php the_field('products_thumb') ?>)"><span class="blogCard__date"><?php echo get_post_time('Y.m.d') ?></span></a>
+          <?php
+            }
+          }
+        ?>
+        </div>
+          <!-- <div class="main-contents-item products-1">
             <a href="./products/atamakaji/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
@@ -36,7 +37,7 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
         </li>
         <li class="main-contents-list">
           <div class="main-contents-item products-2">

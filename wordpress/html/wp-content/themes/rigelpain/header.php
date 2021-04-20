@@ -1,10 +1,12 @@
+<?php $uri = get_template_directory_uri(); ?>
+
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick-theme.css" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css" />
+  <link rel="stylesheet" href="<?= $uri ?>/slick/slick.css" />
+  <link rel="stylesheet" href="<?= $uri ?>/slick/slick-theme.css" />
+  <link rel="stylesheet" href="<?= $uri ?>/css/common.css" />
   <link
     href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Varela+Round&display=swap"
     rel="stylesheet"
@@ -25,14 +27,14 @@
               <p class="header-inner__list-item-large">PRODUCTS</p>
               <p class="header-inner__list-item-small">過去の製作物</p>
             </a>
-            <div class="header-inner__list-item">
+            <!-- <div class="header-inner__list-item">
               <p class="header-inner__list-item-large">EVENTS</p>
               <p class="header-inner__list-item-small">参加したイベント</p>
             </div>
             <div class="header-inner__list-item">
               <p class="header-inner__list-item-large">Blog</p>
               <p class="header-inner__list-item-small">ブログ</p>
-            </div>
+            </div> -->
             <div class="header-inner__list-item">
               <p class="header-inner__list-item-large">CONTACT</p>
               <div class="header-inner__list-item__sns">

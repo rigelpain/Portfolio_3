@@ -1,11 +1,7 @@
-
-
- <?php
-
+<?php
 function create_post_type()
 {
-  register_post_type(
-    'products', /* カスタム投稿タイプ名 */
+  register_post_type( 'products', /* カスタム投稿タイプ名 */
 		array(
 			'labels' => array(
 				'name' => __( '過去の作品' ),
@@ -13,9 +9,9 @@ function create_post_type()
 			),
 			'public' => true,
 			'menu_position' => 5,
+			'has_archive' => 'about_products',
       'show_in_rest' => true,
-			'has_archive' => true,
-			'supports' => array( 'title', 'custom-fields' , 'page-attributes', 'editor' )
+			'supports' => array( 'title', 'custom-fields', 'thumbnail', 'page-attributes', 'editor' )
 		)
 	);
 
@@ -30,9 +26,39 @@ function create_post_type()
 			'singular_label' => 'カテゴリー',
 			'public' => true,
 			'show_ui' => true,
-			'rewrite' => array( 'slug' => 'about_products/category' )
+      'show_in_rest' => true,
 		)
   );
+
+  register_taxonomy(
+		'products_tag', /* タクソノミーの名前 */
+		'products', /* カスタム投稿タイプ名 */
+		array(
+			'hierarchical' => true, /* 親子関係が必要なければ false */
+			'update_count_callback' => '_update_post_term_count',
+			'label' => 'タグ',
+			'singular_label' => 'タグ',
+			'public' => true,
+			'show_ui' => true,
+      'show_in_rest' => true,
+		)
+  );
+
+  register_taxonomy(
+		'products_img', /* タクソノミーの名前 */
+		'products', /* カスタム投稿タイプ名 */
+		array(
+			'hierarchical' => true, /* 親子関係が必要なければ false */
+			'update_count_callback' => '_update_post_term_count',
+			'label' => 'スライド画像',
+			'singular_label' => 'スライド画像',
+			'public' => true,
+			'show_ui' => true,
+      'show_in_rest' => true,
+		)
+  );
+}
+add_action('init', 'create_post_type');
 
 
   function my_scripts() {
