@@ -3,12 +3,12 @@
 <?php get_header(); ?>
   <body>
     <header class="header-wrap">
-      <a href="http://rigelpain.s1008.xrea.com/x/portfolio/3" class="header-logo">
+      <a href="<?= $uri ?>" class="header-logo">
       </a>
       <div class="header-inner">
         <ol class="header-inner__list-wrap">
           <li class="header-inner__list">
-            <a href="http://rigelpain.s1008.xrea.com/x/portfolio/3/products"  class="header-inner__list-item">
+            <a href="<?= $uri ?>/products"  class="header-inner__list-item">
               <p class="header-inner__list-item-large">PRODUCTS</p>
               <p class="header-inner__list-item-small">過去の製作物</p>
             </a>
@@ -52,9 +52,9 @@
         </ol>
       </div>
     </header>
-    
+
     <div class="products">
-      
+
       <div class="main-contents-tittle">
         <p class="main-contents-tittle-en">PRODUCTS</p>
         <p class="main-contents-tittle-ja">過去の作品</p>

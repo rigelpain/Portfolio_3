@@ -36,9 +36,9 @@
 
   &__left {
     @include pc {
-      width: 350px;
+      width: 310px;
       height: 100%;
-      padding: 0 10px;
+      margin-right: 50px;
     }
   }
 
@@ -221,10 +221,11 @@
     &-tittle {
       &-main {
         margin: 0;
-        font-size: 4rem;
+        font-size: 3.2rem;
         font-weight: bold;
         line-height: 4rem;
         color: $color-2;
+        text-align: center;
       }
       &-sub {
         margin: 0;
@@ -232,6 +233,7 @@
         font-weight: bold;
         line-height: 4rem;
         color: $color-3;
+        text-align: center;
       }
     }
     &-description {

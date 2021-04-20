@@ -1,4 +1,16 @@
 <?php get_header(); ?>
+<?php $uri = get_template_directory_uri(); ?>
+<?php
+$category = get_the_terms($post->ID, 'products_cat');
+$tags = get_the_terms($post->ID, 'products_tag');
+$link = get_field('products_link');
+if ($link) {
+  $link_url = $link['url'];
+  $link_title = $link['title'];
+  $link_target = $link['target'] ? $link['target'] : '_self';
+}
+?>
+
 
   <div class="article-wrap">
     <div class="article-category">
@@ -23,11 +35,6 @@
                   }
                 }
               ?>
-                <!-- <li class="article__thumbnail-list"><div class="article__thumbnail-products" style="background-image:url(<?php echo get_field('products_thumb'); ?>)"></div></li>
-                <li class="article__thumbnail-list"><div class="article__thumbnail-products -thum-5-2"></div></li>
-                <li class="article__thumbnail-list"><div class="article__thumbnail-products -thum-5-4"></div></li>
-                <li class="article__thumbnail-list"><div class="article__thumbnail-products -thum-5-5"></div></li>
-                <li class="article__thumbnail-list"><div class="article__thumbnail-products -thum-5-6"></div></li> -->
               </ul>
               <div class="article__property">
                 <div class="article__property-tittle">
@@ -37,13 +44,24 @@
                 <div class="article__property-description">
                   <p class="article__property-description-content">
                     ・テーマ<br>
-                  　「 <?php echo get_field('products_theme'); ?> 」</p>
-                  <p class="article__property-description-content">・ツール　言語<br>　<?php echo get_field('products_tech'); ?></p>
-                  <p class="article__property-description-content">・関連リンク<br>　
-                    <a href="https://twitter.com/The_KESNON"  class="article__property-description-content-link" target="blank">けすのん</a> /
-                    <a href="https://twitter.com/D_kab_D"  class="article__property-description-content-link" target="blank">カブ</a> / <br>
-                  　<a href="https://globalgamejam.org/2020/jam-sites/globalgamejam-2020-hakodate"  class="article__property-description-content-link" target="blank"> GGJ Hakodate</a> /
-                    <a href="https://twitter.com/takumin_kosen"  class="article__property-description-content-link" target="blank">たくみ</a>
+                    「 <?php echo get_field('products_theme'); ?> 」</p>
+                  <p class="article__property-description-content">
+                    ・技術タグ<br>
+                    <?php
+                    if ($tags) {
+                      foreach ($tags as $tag) {
+                        echo $tag->name . ' / ';
+                      }
+                    }
+                    ?>
+                  </p>
+                  <p class="article__property-description-content">・関連リンク<br>
+                    <?php
+                      if ($link) { ?>
+                        <a href="<?= esc_url($link_url) ?>" class="article__property-description-content-link" target="<?= esc_attr($link_target) ?>"><?= esc_url($link_title) ?></a>
+                      <?php
+                      }
+                    ?>
                   </p>
                 </div>
               </div>

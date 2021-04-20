@@ -1,7 +1,7 @@
 <?php get_header();?>
-
+<?php $uri = get_template_directory_uri(); ?>
     <div class="main">
-      <a href="./products"  class="header-inner__list-item">
+      <a href="<?= $uri ?>/products"  class="header-inner__list-item">
       <div class="main-contents-tittle">
         <p class="main-contents-tittle-en">PRODUCTS</p>
         <p class="main-contents-tittle-ja">過去の作品</p>
@@ -17,7 +17,6 @@
               'posts_per_page' => 8,
             )
           );
-
           if ($query_products->have_posts()) {
             while ($query_products->have_posts()) { ?>
               <?php $query_products->the_post(); ?>
@@ -41,7 +40,7 @@
         </li>
         <li class="main-contents-list">
           <div class="main-contents-item products-2">
-            <a href="./products/cheers/index.html">
+            <a href="<?= $uri ?>/products/cheers/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
                   <p class="main-contents-item__description-tittle">Cheers</p>
@@ -54,7 +53,7 @@
         </li>
         <li class="main-contents-list">
           <div class="main-contents-item products-3">
-            <a href="./products/bravers/index.html">
+            <a href="<?= $uri ?>/products/bravers/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
                   <p class="main-contents-item__description-tittle">BRAVERS</p>
@@ -67,7 +66,7 @@
         </li>
         <li class="main-contents-list">
           <div class="main-contents-item products-4">
-            <a href="./products/enoki/index.html">
+            <a href="<?= $uri ?>/products/enoki/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
                   <p class="main-contents-item__description-tittle">Enok!<br>デコレータ</p>
@@ -80,7 +79,7 @@
         </li>
         <li class="main-contents-list">
           <div class="main-contents-item products-5">
-            <a href="./products/bokudodo/index.html">
+            <a href="<?= $uri ?>/products/bokudodo/index.html">
               <div class="main-contents-item__description-wrap">
                 <div class="main-contents-item__description">
                   <p class="main-contents-item__description-tittle">ぼくドド</p>
@@ -92,7 +91,7 @@
           </div>
         </li>
       </ul>
-
+<!--
       <div class="main-contents-tittle">
         <p class="main-contents-tittle-en">EVENTS</p>
         <p class="main-contents-tittle-ja">参加したイベント</p>
@@ -211,7 +210,7 @@
           </div>
         </li>
       </ul>
-
+        -->
     </div>
 
     <?php get_footer(); ?>

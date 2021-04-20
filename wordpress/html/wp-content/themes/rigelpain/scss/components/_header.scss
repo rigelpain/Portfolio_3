@@ -102,7 +102,7 @@
               content: "\f099";
               color: $color-3;
               font-size: 20px;
-              font-family: fontAwesome;
+              font-family: $fontawesome;
             }
           }
           &-github {
@@ -118,7 +118,7 @@
               content: "\f113";
               color: $color-3;
               font-size: 20px;
-              font-family: fontAwesome;
+              font-family: $fontawesome;
             }
           }
         }
